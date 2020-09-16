@@ -1,0 +1,174 @@
+@import url(myreset.css);
+
+/* ----------------- common elements ----------------- */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #d6d8e1;
+}
+.main_title {
+  font-size: 21px;
+  letter-spacing: 1px;
+}
+.sub_title {
+  font-size: 21px;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+  color: #3f539c;
+}
+.main-layout {
+  padding-top: 90px;
+}
+.sub-layout {
+  padding-top: 160px;
+}
+main {
+  padding: 15px;
+}
+/* 공통이므로 common에 작성 */
+.product_list > li {
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.product_list .product_list_header {
+  background: #3f539c;
+  padding: 15px;
+}
+.product_list footer {
+  background: #f1f2f7;
+  padding: 15px;
+}
+.product_list .content {
+  padding: 15px;
+  background: #fff;
+}
+
+/* ----------------- Main page ----------------- */
+.main-header {
+  position: fixed;
+  top: 0;
+  /* bottom: 0; */
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.main-header .header_inner {
+  height: 75px;
+  padding: 0 15px;
+  background: linear-gradient(#d95e46, #8c3d2d);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header svg {
+  color: #fff;
+}
+.main-header h1 {
+  color: #ffffff;
+}
+.main-header form {
+  /* display: none; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 15px;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  z-index: -1;
+  transition: top 0.5s ease-in-out;
+}
+.main-header form input {
+  line-height: 27px;
+  width: calc(100% - 40px);
+}
+.main-header form button {
+  background: none;
+  border: none;
+  font-size: 21px;
+}
+.main-header form.active {
+  top: 100%;
+}
+.latest li header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.latest li header .list_icon {
+  margin-right: 15px;
+}
+.list_titles h3 {
+  color: #fff;
+}
+.list_titles h4 {
+  color: rgba(255, 255, 255, 0.7);
+}
+.list_titles h4 em {
+  font-weight: 500;
+}
+.latest li .content {
+  display: flex;
+}
+.latest li .content .product_brief_desc {
+  flex: 1.2;
+}
+.latest li .content .product_img {
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120px;
+  background: #f8f8fa;
+  border: 2px solid #d6dbe2;
+  margin-left: 15px;
+}
+.latest li .content .product_img img {
+  width: 100%;
+}
+.latest li .content .product_img img.no_pic {
+  width: 100px;
+  opacity: 0.1;
+}
+.latest li .content .product_brief_desc p {
+  line-height: 27px;
+}
+.latest li footer {
+  display: flex;
+  justify-content: space-between;
+}
+.latest li footer .tags {
+  display: flex;
+  align-items: center;
+}
+.latest li footer .tags li {
+  margin-right: 30px;
+  text-transform: uppercase;
+}
+.latest li footer form input {
+  display: none;
+}
+.latest li footer form label {
+  position: relative;
+  color: #dd5e46;
+}
+.latest li footer form label span:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.3s;
+}
+.latest li footer form input:checked + label span:last-child {
+  opacity: 1;
+}
+
+/* ----------------- aside ----------------- */
+
+/* ----------------- category ----------------- */
+
+/* ----------------- details ----------------- */
